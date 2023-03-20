@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+    {{ hv_script4|safe }}
+    {{ hv_script5|safe }}
+    {{ hv_script6|safe }}
+{% endblock %}
+
+{% block header %}
+  <h1>{% block title %}Syn Flood{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div4|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div5|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div6|safe }}
+        </div>
+    </div>
+{% endblock %}

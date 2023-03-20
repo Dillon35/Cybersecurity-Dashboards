@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+    {{ hv_script1|safe }}
+    {{ hv_script2|safe }}
+    {{ hv_script3|safe }}
+{% endblock %}
+
+{% block header %}
+  <h1>{% block title %}Http Flood{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div1|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div2|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div3|safe }}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+    {{ hv_script7|safe }}
+    {{ hv_script8|safe }}
+    {{ hv_script9|safe }}
+{% endblock %}
+
+{% block header %}
+  <h1>{% block title %}Udp Flood{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div7|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div8|safe }}
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12">
+            {{ hv_div9|safe }}
+        </div>
+    </div>
+{% endblock %}
